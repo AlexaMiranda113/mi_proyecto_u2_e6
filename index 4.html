@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio Web Completo con Navegación Adaptativa</title>
+
+    <!-- Enlace a la hoja de estilos CSS general -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         HEADER / ENCABEZADO
+         Contiene la barra de navegación (existente)
+         y la sección Hero (banner principal de bienvenida).
+         ========================================== -->
+    <header class="site-header">
+        
+        <!-- BARRA DE NAVEGACIÓN (Estructura intacta) -->
+        <nav class="navbar">
+            <div class="navbar-container">
+                <!-- Logotipo del sitio web -->
+                <a href="index.html" class="navbar-logo">VISIONLEXX</a>
+                
+                <!-- Botón de menú hamburguesa para dispositivos móviles -->
+                <button class="navbar-toggle" aria-label="Abrir menú">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+
+                <!-- Menú principal con enlaces de navegación -->
+                <ul class="navbar-menu">
+                    <li> <a href="#" class="active"> Home </a> </li>
+                    <li> <a href="#about"> About </a> </li>
+                    <li> <a href="#services"> Services </a> </li>
+                    <li> <a href="#blog"> Blog </a> </li>
+                    <li> <a href="#contact"> Contact </a> </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- SECCIÓN HERO
+             Presentación visual de impacto justo debajo de la barra de navegación.
+             Función: Captar la atención inmediata del visitante y ofrecer una acción directa (CTA). -->
+        <div class="hero-container">
+            <div class="hero-content">
+                <!-- Título principal de la página -->
+                <h1 class="hero-title">Mi portafolio</h1>
+                <!-- Breve descripción o subtítulo persuasivo -->
+                <p class="hero-subtitle">Soy visionlexx, soy fotógrafa y estudiante de Diseño Gráfico. Me interesa explorar la fotografía como una forma de expresión visual, experimentando con la luz, el color, las sombras y las composiciones para transmitir ideas y emociones. A través de mi cámara busco encontrar algo especial en situaciones cotidianas, descubrir diferentes perspectivas y capturar momentos que muchas veces pasan desapercibidos.Este portafolio reúne algunos de mis proyectos, exploraciones visuales y fotografías que representan mi manera de observar el mundo. </p>
+                <!-- Botón de llamada a la acción (Call To Action) -->
+                <a href="#services" class="hero-btn">Explorar Servicios</a>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- ==========================================
+         MAIN / CONTENIDO PRINCIPAL
+         Contenedor semántico principal del sitio web.
+         Aloja el contenido relevante dividido en secciones.
+         ========================================== -->
+    <main class="main-content">
+
+        <!-- SECCIÓN DE SERVICIOS / CARACTERÍSTICAS
+             Función: Presentar los servicios o características clave en formato de cuadrícula (cards). -->
+        <section id="services" class="content-section">
+            <div class="section-header">
+                <h2 class="section-title">Nuestros Servicios</h2>
+                <p class="section-description">Soluciones adaptadas a tus necesidades comerciales y digitales.</p>
+            </div>
+
+            <!-- Cuadrícula flexible para organizar las tarjetas de información -->
+            <div class="cards-grid">
+                <!-- Tarjeta 1 -->
+                <article class="card">
+                    <div class="card-icon">📸</div>
+                    <h3 class="card-title">Fotógrafa</h3>
+                    <p class="card-text">Captura de momentos, composición visual, manejo de luz y exploración de diferentes perspectivas.</p>
+                </article>
+
+                <!-- Tarjeta 2 -->
+                <article class="card">
+                    <div class="card-icon">📹</div>
+                    <h3 class="card-title">Videográfa</h3>
+                    <p class="card-text">Grabación de escenas, creación de contenido audiovisual y experimentación con planos y movimientos de cámara.</p>
+                </article>
+
+                <!-- Tarjeta 3 -->
+                <article class="card">
+                    <div class="card-icon">💻</div>
+                    <h3 class="card-title">Editora</h3>
+                    <p class="card-text">Montaje de video, selección de tomas, ajustes de color, ritmo visual y construcción de narrativas.</p>
+                </article>
+            </div>
+        </section>
+
+
+        <!-- SECCIÓN "ACERCA DE" / INFORMACIÓN
+             Función: Ofrecer contexto adicional sobre la empresa o proyecto. -->
+        <section id="about" class="content-section about-section">
+            <div class="about-container">
+                <div class="about-text">
+                    <h2 class="section-title">Sobre mi</h2>
+                    <p>Me especializo en crear contenido visual a través de la fotografía, el video y la edición. Me gusta experimentar con la luz, los encuadres, el movimiento y el color para crear imágenes que transmitan emociones y cuenten historias. </p>
+                    <p>Mi trabajo combina la creatividad y la atención a los detalles para transformar ideas en propuestas visuales.
+					</p>
+	  
+
+					<img src="amarillo.jpg" 
+     style="width: 400px; height: auto; display: block; margin: 0 auto;">
+					
+                </div>
+            </div>
+		
+			
+        </section>
+
+    </main>
+
+
+	<div style="text-align: center"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4546.985429645184!2d-100.9838813240092!3d22.15158934826791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842a9900178dff15%3A0x77038509483dcb58!2sDespacho%20Centro!5e1!3m2!1ses-419!2smx!4v1791229371221!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe> 
+	
+	
+    <!-- ==========================================
+         FOOTER / PIE DE PÁGINA
+         Función: Mostrar información de derechos, enlaces útiles y redes sociales.
+         ========================================== -->
+    <footer id="contact" class="site-footer">
+        <div class="footer-container">
+            <!-- Columna 1: Información de marca -->
+            <div class="footer-col">
+                <h4 class="footer-brand">Mi Sitio Web</h4>
+                <p class="footer-desc">Creando experiencias desde el lente de la cámara </p>
+            </div>
+
+            <!-- Columna 2: Enlaces rápidos de navegación -->
+            <div class="footer-col">
+                <h5 class="footer-heading">Enlaces Rápidos</h5>
+                <ul class="footer-links">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#about">Acerca de</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Información de contacto -->
+            <div class="footer-col">
+                <h5 class="footer-heading">Contacto</h5>
+                <p>Email: visionlexx@gmail.com</p>
+                <p>Teléfono: +52 (444) 123-4567</p>
+            </div>
+        </div>
+
+        <!-- Barra inferior de derechos de autor -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 visionlexx. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script de control del menú móvil -->
+    <script src="script.js"></script>
+</body>
+</html>
