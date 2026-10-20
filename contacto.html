@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | VISIONLEXX</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-page { min-height: calc(100vh - 80px); display:flex; align-items:center; justify-content:center; padding:3rem 1.5rem; }
+    .contact-card { width:min(720px,100%); padding:3rem 2rem; text-align:center; background:rgba(22,37,48,.78); backdrop-filter:blur(10px); border:1px solid rgba(255,255,255,.2); border-radius:16px; box-shadow:0 15px 30px rgba(0,0,0,.4); }
+    .contact-card h1 { font-size:clamp(2rem,5vw,3rem); margin-bottom:1rem; }
+    .contact-card .intro { color:yellow; margin-bottom:2rem; line-height:1.7; }
+    .contact-item { margin:1.3rem 0; line-height:1.8; }
+    .contact-item a { color:#bcd4e5; text-decoration:none; overflow-wrap:anywhere; }
+    .contact-item a:hover { text-decoration:underline; }
+    .contact-back { display:inline-block; margin-top:1.5rem; padding:12px 28px; background:#bcd4e5; color:#162530; border:2px solid white; border-radius:30px; text-decoration:none; font-weight:600; }
+    .contact-back:hover { background:white; }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">VISIONLEXX</a>
+      <ul class="navbar-menu" style="display:flex;">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contacto.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main class="contact-page">
+    <section class="contact-card">
+      <h1>Contacto</h1>
+      <p class="intro">¿Te gustaría trabajar conmigo o conocer más sobre mi trabajo? Escríbeme o sígueme en mis redes sociales.</p>
+      <div class="contact-item"><strong>Correo electrónico</strong><br><a href="mailto:lexmirandavision@gmail.com">lexmirandavision@gmail.com</a></div>
+      <div class="contact-item"><strong>Instagram</strong><br><a href="https://www.instagram.com/visionlexx/" target="_blank" rel="noopener noreferrer">@visionlexx</a></div>
+      <div class="contact-item"><strong>TikTok</strong><br><a href="https://www.tiktok.com/@lexmiranda" target="_blank" rel="noopener noreferrer">@lexmiranda</a></div>
+      <a class="contact-back" href="index.html">Volver al portafolio</a>
+    </section>
+  </main>
+</body>
+</html>
