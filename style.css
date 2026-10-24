@@ -408,3 +408,95 @@ REGLAS RESPONSIVAS (MEDIA QUERIES)
   height: auto;
   margin: 0 auto;
 }
+
+
+/* ==========================================================================
+   GALERÍA DE FOTOGRAFÍA DEPORTIVA (agregado; estilos originales conservados)
+   ========================================================================== */
+.sports-gallery-section { scroll-margin-top: 100px; }
+.sports-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.1rem;
+}
+.gallery-photo {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  border: 1px solid rgba(255,255,255,.25);
+  border-radius: 12px;
+  background: rgba(15,23,42,.7);
+  cursor: zoom-in;
+  box-shadow: 0 8px 20px rgba(0,0,0,.25);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.gallery-photo:hover, .gallery-photo:focus-visible {
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 14px 28px rgba(0,0,0,.4);
+  outline: 2px solid #bcd4e5;
+  outline-offset: 2px;
+}
+.gallery-photo img {
+  display: block;
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  transition: transform .45s ease, filter .3s ease;
+}
+.gallery-photo:hover img { transform: scale(1.06); filter: saturate(1.08); }
+.gallery-hint { text-align:center; color:#cbd5e1; margin-top:1.2rem; font-size:.95rem; }
+.photo-lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 5rem 5rem;
+  background: rgba(0,0,0,.92);
+}
+.photo-lightbox.open { display:flex; animation: lightboxFade .22s ease; }
+.lightbox-image {
+  max-width: min(100%, 1100px);
+  max-height: 78vh;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 12px 35px rgba(0,0,0,.5);
+}
+.lightbox-close, .lightbox-prev, .lightbox-next {
+  position: absolute;
+  border: 1px solid rgba(255,255,255,.4);
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  color: #fff;
+  background: rgba(22,37,48,.8);
+  cursor: pointer;
+  font-size: 1.7rem;
+  transition: background .2s ease, transform .2s ease;
+}
+.lightbox-close:hover, .lightbox-prev:hover, .lightbox-next:hover {
+  background: #bcd4e5;
+  color: #162530;
+  transform: scale(1.06);
+}
+.lightbox-close { top: 1.2rem; right: 1.5rem; font-size: 2rem; }
+.lightbox-prev { left: 1.2rem; top: 50%; }
+.lightbox-next { right: 1.2rem; top: 50%; }
+.lightbox-counter { position:absolute; bottom:1.25rem; color:#fff; font-size:.95rem; }
+body.lightbox-open { overflow:hidden; }
+@keyframes lightboxFade { from {opacity:0;} to {opacity:1;} }
+@media (max-width: 880px) {
+  .sports-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .gallery-photo img { height: 280px; }
+  .photo-lightbox { padding: 4rem 3.5rem; }
+}
+@media (max-width: 520px) {
+  .sports-gallery { grid-template-columns: 1fr; }
+  .gallery-photo img { height: auto; max-height: 520px; object-fit: cover; }
+  .photo-lightbox { padding: 4rem 1rem; }
+  .lightbox-prev { left: .35rem; }
+  .lightbox-next { right: .35rem; }
+  .lightbox-prev, .lightbox-next { width: 38px; height: 38px; }
+}

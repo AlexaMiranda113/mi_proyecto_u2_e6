@@ -1,0 +1,14 @@
+VISIONLEXX — sitio actualizado conservando tu diseño original
+
+Archivos:
+- index.html: tu página principal con la galería deportiva añadida.
+- style.css: tu CSS original con estilos nuevos únicamente para la galería y el visor.
+- script.js: conserva el menú móvil y añade el visor interactivo.
+- contacto.html: conserva tu página de contacto y añade el botón “Más información”.
+- amarillo.jpg y venadillo.jpg: imágenes que ya utilizaba tu página.
+- imagenes/: las 13 fotografías deportivas.
+
+Para abrirlo:
+1. Descomprime el ZIP.
+2. Mantén todos los archivos y carpetas juntos.
+3. Abre index.html en tu navegador o en Dreamweaver.
